@@ -1,0 +1,23 @@
+{% extends "base.html" %} 
+
+{% block main_content %}
+    <section id="home">
+        <h1>Killstreak Game</h1>
+        <div class="border_content">
+            <nav>
+                <ul>
+                    <li><a class="button" href="{{ url_for('game') }}">Play</a></li>
+                    <li><a  class="button"  href="{{ url_for('leaderboard') }}">Leaderboards</a></li>
+                    <li><a  class="button"  href="{{ url_for('howtoplay') }}">How to Play</a></li>
+                    {% if g.user %}
+                            <li>User id: {{ g.user }}</li>
+                            <li><a  class="button"  href="{{ url_for('logout') }}">Logout</a></li>
+                    {% else %}
+                        <li><a  class="button"  href="{{ url_for('register') }}">Register</a></li>
+                        <li><a  class="button"  href="{{ url_for('login') }}">Login</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div> 
+    </section>
+{% endblock %}

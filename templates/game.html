@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}">
+        <script src="{{ url_for('static', filename='game.js') }}" type="module"></script>
+    </head>
+    <body>
+        <h1>Killstreak Game</h1>
+        <main>
+            <canvas width="512" height="320">
+            </canvas>
+        </main>
+        <p>COINS = 1000 POINTS</p>
+        <P>1 KILL = 100 POINTS</P>
+        <li><a  class="button"  href="{{ url_for('index') }}">Go to Home</a></li>
+    </body>
+    
+</html>

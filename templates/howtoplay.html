@@ -1,0 +1,21 @@
+{% extends "base.html" %} 
+
+{% block main_content %}
+    <h1>How to play the Killstreak Game</h1>
+
+    <section id="Objective">
+        <h3>OBJECTIVE OF THE GAME</h3>
+        <p> The objective of the game it to <strong>KILL</strong> and <strong>AVOID</strong> the enemies! </p>
+        <p>You earn <b>POINTS</b> by shooting the enemies and collecting coins.</p>
+        <p>If touched by Enemy <b>GAME OVER!</b></p>
+    </section>
+
+    <section id="controls">
+        <h3>CONTROLS</h3>
+        <img class="image" src="{{url_for('static', filename='arrowkeys.png')}}">
+        <img class="image2" src="{{url_for('static', filename='leftclick.png')}}">
+        <p> To <b>MOVE</b> around is the <b>ARROW KEYS</b> </p>
+        <p>To <b>SHOOT</b> is <b>LEFT CLICK</b> and it will shoot based on the direction of your pointer </p>
+    </section>
+    <li><a  class="button"  href="{{ url_for('index') }}">Go to Home</a></li>
+{% endblock %}

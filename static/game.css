@@ -1,0 +1,116 @@
+html {
+    background-color: whitesmoke;
+}
+
+body {
+    font-family:'Pixeled';
+}
+
+canvas {
+    background-color: black;
+    display: block;
+    margin: 1em auto;
+}
+
+li {
+    list-style: none;
+}
+
+.button {
+    background-color: lightsteelblue;
+    border: none;
+    color: white;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.border_content li {
+    list-style: none;
+}
+
+#outcome {
+    color: red;
+    text-align: center;
+    font-size: 4em;
+}
+
+h1 {
+    text-align: center;
+    vertical-align: top;
+}
+
+strong, b {
+    color: blue;
+}
+
+#home {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#home h1 {
+    font-size: 3.5em;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+.image {
+    width: 250px;
+    height: auto;
+    align-content: center;
+}
+
+.image2 {
+    width: 150px;
+    height: auto;
+    align-content: center;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#outcome {
+    color: red;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+
+    margin: auto;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+th {
+    color: blue;
+}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    <section id="leaderboard">
+        <h1>Leaderboard</h1>
+                <div class="box">
+                    <table>
+                        <tr>
+                            <th>USER<p>
+                            <th>SCORE</p>
+                        </tr>
+                    {% if scores %}
+                        {% for score in scores %}
+                            <tr>
+                                <td>{{ score["user_id"] }}</td>
+                                <td> {{ score["score"] }}</td>
+                            </tr>
+                        {% endfor %}
+                        {% else %}
+                        <p>No scores recorded yet</p>
+                    {% endif %}
+                    </table>
+                </div>
+    </section>
+    <li><a  class="button"  href="{{ url_for('index') }}">Go to Home</a></li>
+{% endblock %}

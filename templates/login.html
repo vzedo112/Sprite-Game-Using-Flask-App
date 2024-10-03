@@ -1,0 +1,27 @@
+{% extends "base.html" %} 
+
+{% block main_content %}
+<section id="login">
+    <h2>Player Login</h2>
+    <form method="POST" action="" novalidate>
+        {{ form.hidden_tag() }}
+        {{ form.user_id.label }}
+        {{ form.user_id() }}
+        {% for error in form.user_id.errors %}
+            {{ error }}
+        {% endfor %}
+        <br>
+        {{ form.password.label }}
+        {{ form.password() }}
+        {% for error in form.password.errors %}
+            {{ error }}
+        {% endfor %}
+        <br>
+        {{ form.submit() }}
+        <br>
+        <a href="{{ url_for('register') }}">New Player? Sign up for an account</a>
+    </form>
+    <li><a  class="button"  href="{{ url_for('index') }}">Go to Home</a></li>
+</section>
+
+{% endblock %}
